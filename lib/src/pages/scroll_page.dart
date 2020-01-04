@@ -12,7 +12,7 @@ class ScrollPage extends StatelessWidget {
           _pagina1(),
           _pagina2(),
         ],
-      ),
+      )
     );
   }
 
