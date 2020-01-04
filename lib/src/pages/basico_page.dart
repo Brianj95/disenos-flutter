@@ -32,11 +32,14 @@ class BasicoPage extends StatelessWidget {
   Widget _crearImagen() {
     return Container(
       width: double.infinity,
-      child: FadeInImage(
-        image: NetworkImage('https://media2.giphy.com/media/YrTnRM6fKIB4iqHuN1/giphy.gif'),
-        placeholder: AssetImage('assets/img/loading.gif'),
-        fit: BoxFit.cover,
-        height: 300.0,
+      child: ClipRRect(
+        borderRadius: BorderRadius.vertical(bottom: Radius.circular(30.0)),
+        child: FadeInImage(
+          image: NetworkImage('https://media2.giphy.com/media/YrTnRM6fKIB4iqHuN1/giphy.gif'),
+          placeholder: AssetImage('assets/img/loading.gif'),
+          fit: BoxFit.cover,
+          height: 300.0,
+        ),
       ),
     );
   }
