@@ -8,6 +8,8 @@ import 'package:disenos/src/pages/scroll_page.dart';
 import 'package:disenos/src/pages/botones_page.dart';
 import 'package:disenos/src/pages/mario_page.dart';
 import 'package:disenos/src/pages/gradientes_page.dart';
+import 'package:disenos/src/pages/doble_page.dart';
+import 'package:disenos/src/pages/doble2_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Diseños',
-      initialRoute: 'charts',
+      initialRoute: 'doble',
 
       routes: {
         'basico'      : (BuildContext context) => BasicoPage(),
@@ -31,6 +33,8 @@ class MyApp extends StatelessWidget {
         'mario'       : (BuildContext context) => MarioPage(),
         'gradientes'  : (BuildContext context) => GradientesPage(),
         'charts'      : (BuildContext context) => ChartsPage(),
+        'doble'       : (BuildContext context) => DoblePage(),
+        'doble2'      : (BuildContext context) => Doble2Page(),
       },
     );
   }
